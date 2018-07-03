@@ -9,8 +9,15 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 #homeBtn{padding: 25px}
-.depassepas {overflow:auto;}
-.depassepas img {width:100%; align:middle;}
+
+.depassepas img {align:center;}
+
+@media screen and (max-width: 640px) {
+  .depassepas {overflow:auto;}
+  .depassepas img {width:100%; align:center;}
+  .youtube{width:100%;}
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -106,7 +113,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		  
 		  <h5 class="w3-text-teal"><b>Démonstration</b></h5>
 		     <p align="center">
-			 <iframe width="100%" src="https://www.youtube.com/embed/gJ0m8ngMOpI" frameborder="0" gesture="media" allowfullscreen></iframe>
+			 <iframe width="560" height="315" class="youtube" src="https://www.youtube.com/embed/gJ0m8ngMOpI" frameborder="0" gesture="media" allowfullscreen></iframe>
 			 </p>
 			 <p>Vous pouvez télécharger le jeu <a href="https://play.google.com/store/apps/details?id=com.dimitricharneux.SpermaRun">ici</a>.</p>
 		  <hr>
@@ -146,7 +153,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 			  
 			  <ul>
 			   	<li>Par defaut, le spermatozoïde tourne sur lui-même.</li>
-				<p align="center"><div class="depassepas"><img src="spermarun/deplacement_base.gif" alt="tourne sur lui-même"></div></p>
+				<p align="center"><div class="depassepas"><img src="spermarun/deplacement_base.gif" alt="tourne sur lui-même" align="middle"></div></p>
 				<br><hr>
 				<li>Au clique, il change de direction.</li>
 				<p align="center"><div class="depassepas"><img src="spermarun/deplacement_clique.gif" alt="change de direction une fois"></div></p>
