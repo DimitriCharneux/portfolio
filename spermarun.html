@@ -10,10 +10,21 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 #homeBtn{padding: 25px}
 
+.containerYoutube {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.youtube{position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
 
 @media screen and (max-width: 640px) {
   .depassepas {width:100%;}
-  .youtube{width:100%;}
 }
 
 </style>
@@ -110,9 +121,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		  <hr>
 		  
 		  <h5 class="w3-text-teal"><b>Démonstration</b></h5>
-		     <p align="center">
-			 <iframe width="560" height="315" class="youtube" src="https://www.youtube.com/embed/gJ0m8ngMOpI" frameborder="0" gesture="media" allowfullscreen></iframe>
-			 </p>
+		     <div class="containerYoutube">
+			 <iframe class="youtube" src="https://www.youtube.com/embed/gJ0m8ngMOpI"></iframe>
+			 </div>
 			 <p>Vous pouvez télécharger le jeu <a href="https://play.google.com/store/apps/details?id=com.dimitricharneux.SpermaRun">ici</a>.</p>
 		  <hr>
 		  
@@ -124,21 +135,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 				 <td>
 					 <figure>
 						<img src="spermarun/ovule.png" alt="Ovule" height="163">
-						<figcaption align="center"><br />Ovule</figcaption>
+						<figcaption align="center"><br /><p align="center">Ovule</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="spermarun/paroi.png" alt="Parois" height="163">
-						<figcaption align="center"><br />Paroi</figcaption>
+						<figcaption align="center"><br /><p align="center">Paroi</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="spermarun/virus.png" alt="Virus" height="163">
-						<figcaption align="center"><br />Virus</figcaption>
+						<figcaption align="center"><br /><p align="center">Virus</p></figcaption>
 					 </figure>
 				 <td>
 				 
@@ -149,22 +160,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		     <p>Par défaut, le spermatozoïde tourne sur lui-même. Pour le faire avancer, il faut cliquer sur l'écran afin de changer le côté sur lequel il tourne afin de le faire zigzaguer. </p>
 
 			  
-			  <ul>
-			   	<li>Par defaut, le spermatozoïde tourne sur lui-même.</li>
+			  
+			   	
 				<p align="center"><img class="depassepas" src="spermarun/deplacement_base.gif" alt="tourne sur lui-même" align="middle"></p>
+				<p align="center"> Par defaut, le spermatozoïde tourne sur lui-même.</p>
 				<br><hr>
-				<li>Au clique, il change de direction.</li>
+				
 				<p align="center"><img class="depassepas" src="spermarun/deplacement_clique.gif" alt="change de direction une fois" align="middle"></p>
+				<p align="center">Au clique, il change de direction.</p>
 				<br><hr>
-				<li>Plusieurs cliques le font avancer en zigzag.</li>
+				
 				<p align="center"><img class="depassepas" src="spermarun/deplacement_avance.gif" alt="avance" align="middle"></p>
-			  </ul>
+				<p align="center">Plusieurs cliques le font avancer en zigzag.</p>
+			  
 		  
 			<br /><hr />
 			<p>Vos meilleurs temps sont enregistrés et vous gagnez des médailles si vous êtes assez rapide.</p>
 			<figure>
 				<img class="depassepas" src="spermarun/recompenses.png" alt="Tableau des récompenses">
-				<figcaption align="center"><br />Tableau des récompenses du niveau 1.</figcaption>
+				<figcaption ><br /><p align="center">Tableau des récompenses du niveau 1.</p></figcaption>
 			</figure>
 		  
 		    <br /><hr />
