@@ -6,10 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-#homeBtn{padding: 25px}
-</style>
+<link rel="stylesheet" href="style.css"/>
+
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -106,10 +104,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 		  <hr>
 		  
 		  <h5 class="w3-text-teal"><b>Démonstration</b></h5>
-		     <p align="center">
-			 <iframe width="560" height="315" src="https://www.youtube.com/embed/vRHGjrOAzfU" frameborder="0" gesture="media" allowfullscreen></iframe>
-			 </p>
-			 <!--p>Vous pouvez télécharger l'apk du jeu <a href="https://github.com/DimitriCharneux/portefolio/blob/master/SpermaRun.apk">ici</a>.</p-->
+		     <div class="containerYoutube">
+			 <iframe class="youtube" src="https://www.youtube.com/embed/vRHGjrOAzfU"></iframe>
+			 </div>
 		  <hr>
 		  
 		  <h5 class="w3-text-teal"><b>Le jeu</b></h5>
@@ -117,19 +114,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 			 
 			 <p> Le jeu se veut très sombre afin d'obliger le joueur à regarder autour de lui grâce à la lampe accrochée au joueur. Les tirs éclairent également brievement la zone. </p>
 			 <figure>
-				<img src="zombie/jeu.png" alt="Image du jeu" width="770">
+				<img class="depassepas" src="zombie/jeu.png" alt="Image du jeu" width="770">
 			 </figure>
 			 <br /><hr />
 			 <p> Le joueur a la possibilité de ramasser des caisses de soins et de munitions afin de récupérer de la vie ou des balles. </p>
 
 			<figure>
-				<img src="zombie/caisseSoin.gif" alt="Caisse de soin" width="770">
-				<figcaption align="center"><br />Caisse de soin</figcaption>
+				<img class="depassepas" src="zombie/caisseSoin.gif" alt="Caisse de soin" width="770">
+				<figcaption align="center"><br /><p align="center">Caisse de soin</p></figcaption>
 			</figure>
 			<br />
 			<figure>
-				<img src="zombie/caisseMunitions.gif" alt="Caisse de munitions" width="770">
-				<figcaption align="center"><br />Caisse de munitions</figcaption>
+				<img class="depassepas" src="zombie/caisseMunitions.gif" alt="Caisse de munitions" width="770">
+				<figcaption align="center"><br /><p align="center">Caisse de munitions</p></figcaption>
 			</figure>
 			<br /><hr />
 
@@ -146,10 +143,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 								<img src="zombie/gicleSang2.gif" alt="Giclée de sang" height="250">
 							 </td> </tr>
 						 </table>
-						 <figcaption align="center"><br />Giclée de sang</figcaption>
+						 <figcaption align="center"><br /><p align="center">Giclée de sang</p></figcaption>
 					 </figure>
 					<br />	 
-					 <p align="center"><img align="center" src="zombie/particuleTir.gif" alt="Particule lors d'un tir" height="250"> <br /><br />Particule lors d'un tir</p>
+					 <p align="center"><img class="depassepas" align="center" src="zombie/particuleTir.gif" alt="Particule lors d'un tir" height="250"> <br /><br />Particule lors d'un tir</p>
 					 
 			<br /><hr />
 			
@@ -162,14 +159,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 				 <td>
 					 <figure>
 						<img src="zombie/modele3D.png" alt="Modèle 3D du personnage" height="250">
-						<figcaption align="center"><br />Modèle 3D du personnage</figcaption>
+						<figcaption align="center"><br /><p align="center">Modèle 3D du personnage</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="zombie/modeleArbre.png" alt="Modèle 3D d'un arbre" height="250">
-						<figcaption align="center"><br />Modèle 3D d'un arbre</figcaption>
+						<figcaption align="center"><br /><p align="center">Modèle 3D d'un arbre</p></figcaption>
 					 </figure>
 				 </td>
 				 
@@ -179,14 +176,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 				 <td>
 					 <figure>
 						<img src="zombie/modeleCaisseMunitions.png" alt="Modèle 3D d'une caisse de munitions" height="250">
-						<figcaption align="center"><br />Modèle 3D d'une caisse de munitions</figcaption>
+						<figcaption align="center"><br /><p align="center">Modèle 3D d'une caisse de munitions</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="zombie/modeleRevolver.png" alt="Modèle 3D d'un revolver" height="250">
-						<figcaption align="center"><br />Modèle 3D d'un revolver</figcaption>
+						<figcaption align="center"><br /><p align="center">Modèle 3D d'un revolver</p></figcaption>
 					 </figure>
 				 </td>
 				 
@@ -203,21 +200,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 				 <td>
 					 <figure>
 						<img src="zombie/deplacementTireur.gif" alt="Déplacement du joueur" height="250">
-						<figcaption align="center"><br />Déplacement du joueur</figcaption>
+						<figcaption align="center"><br /><p align="center">Déplacement du joueur</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="zombie/deplacementZombie.gif" alt="Déplacement du joueur" height="250">
-						<figcaption align="center"><br />Déplacement du Zombie</figcaption>
+						<figcaption align="center"><br /><p align="center">Déplacement du Zombie</p></figcaption>
 					 </figure>
 				 </td>
 				 
 				 <td>
 					 <figure>
 						<img src="zombie/frappeZombie.gif" alt="Modèle 3D d'un revolver" height="250">
-						<figcaption align="center"><br />Attaque d'un zombie</figcaption>
+						<figcaption align="center"><br /><p align="center">Attaque d'un zombie</p></figcaption>
 					 </figure>
 				 </td>
 				 
