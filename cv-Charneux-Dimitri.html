@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dimitri Charneux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white shadow-md sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+        <h1 class="text-2xl font-bold">Dimitri Charneux</h1>
+        <nav class="space-x-6">
+          <a href="#about" class="hover:text-blue-400">À propos</a>
+          <a href="#skills" class="hover:text-blue-400">Compétences</a>
+          <a href="#experience" class="hover:text-blue-400">Expériences</a>
+          <a href="#projects" class="hover:text-blue-400">Projets</a>
+          <a href="#education" class="hover:text-blue-400">Diplômes</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+          <a href="CV_Charneux.pdf" target="_blank" class="bg-blue-500 px-4 py-2 rounded-lg font-semibold hover:bg-blue-600">📄 CV</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero -->
+    <section class="py-20 bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 text-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start md:justify-between px-6 gap-10">
+        <!-- Texte -->
+        <div class="text-center md:text-left">
+          <h2 class="text-5xl font-extrabold drop-shadow-lg">Dimitri Charneux</h2>
+          <p class="mt-4 text-lg">Chef de projet & Développeur Unity</p>
+          <div class="mt-6 space-x-4">
+            <a href="#projects" class="bg-white text-indigo-700 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-200"> 🎮 Voir mes projets </a>
+            <a href="CV_Charneux.pdf" target="_blank" class="bg-gray-900 text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-700"> 📄 Télécharger mon CV </a>
+          </div>
+        </div>
+        <!-- Photo avec animation + hover -->
+        <div class="flex justify-center md:justify-end">
+          <!-- wrapper qui anime l'apparition -->
+          <div class="opacity-0 animate-fadeInPhoto">
+            <!-- l'image reçoit le hover (transition + will-change) -->
+            <img src="moi.jpg" alt="Photo de Dimitri Charneux" class="w-48 h-48 md:w-56 md:h-56 rounded-full shadow-lg border-4 border-white object-cover
+					transition-transform duration-500 transform hover:scale-110 hover:rotate-3" style="will-change: transform;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Animation custom -->
+    <style>
+      @keyframes fadeInPhoto {
+        0% {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInPhoto {
+        animation: fadeInPhoto 1.0s ease-out forwards;
+      }
+    </style>
+    <!-- About -->
+    <section id="about" class="max-w-5xl mx-auto py-16 px-6">
+      <h3 class="text-3xl font-bold mb-6">À propos de moi</h3>
+      <p class="text-lg leading-relaxed"> Je suis chef de projet et développeur Unity, spécialisé dans la formation en réalité virtuelle et la gestion de projet. <br>Mon objectif est de transformer des idées en expériences immersives. <br>J’aime concevoir des mécaniques de gameplay, gérer des roadmaps et livrer des projets aboutis. </p>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="bg-gray-900 text-white py-16">
+      <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-8 text-center">Compétences</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+            <h4 class="text-xl font-semibold mb-4 text-blue-400">Gestion & Organisation</h4>
+            <ul class="space-y-2">
+              <li>✅ Gestion de projet</li>
+              <li>✅ Pilotage d’équipe</li>
+              <li>✅ Communication client</li>
+              <li>✅ Méthodes Agiles</li>
+              <li>✅ Architecture logicielle</li>
+              <li>✅ Utilisation des IA</li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+            <h4 class="text-xl font-semibold mb-4 text-purple-400">Développement & Technique</h4>
+            <ul class="space-y-2">
+              <li>🎮 Développement Unity / C#</li>
+              <li>🎨 Shader / HLSL</li>
+              <li>📱 Applications AR/VR/Mobile</li>
+              <li>🖥️ Développement multi-plateformes (Android, iOS, PC)</li>
+              <li>🛠️ Recettage & optimisation</li>
+              <li>✏ Utilisation de Blender</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Expériences professionnelles -->
+    <section id="experience" class="bg-gray-100 py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-8 text-center">Expériences professionnelles</h3>
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl shadow p-6">
+            <h4 class="text-xl font-semibold text-purple-600">Responsable grand compte</h4>
+            <p class="text-gray-600">Audace, Douvrin | 2022 – Aujourd’hui</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+              <li>Gestion de multiples projets pour Orano (AR / VR / Mobile)</li>
+              <li>Chiffrage et planification</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <h4 class="text-xl font-semibold text-purple-600">Chef de projet</h4>
+            <p class="text-gray-600">Audace | 2021 – Aujourd’hui</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+              <li>Gestion de projet et communication client</li>
+              <li>Coordination des collaborateurs (développeurs, graphistes, IP)</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <h4 class="text-xl font-semibold text-purple-600">Lead développeur Unity</h4>
+            <p class="text-gray-600">Audace | 2021 – Aujourd’hui</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+              <li>Création d’architectures de projets</li>
+              <li>Rédaction de cahiers des spécifications</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <h4 class="text-xl font-semibold text-purple-600">Développeur Unity</h4>
+            <p class="text-gray-600">Audace | 2018 – Aujourd’hui</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+              <li>Développement d’outils de formation en VR</li>
+              <li>Applications AR, Android, iOS, PC</li>
+              <li>Recettage des applications réalisées</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <h4 class="text-xl font-semibold text-purple-600">Développeur Unity Stagiaire</h4>
+            <p class="text-gray-600">Worldline, Seclin | 2017</p>
+            <ul class="list-disc list-inside text-gray-700 mt-2">
+              <li>Développement d’un serious game Android (Unity)</li>
+              <li>Rédaction du cahier de Game Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="bg-gray-200 py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-8 text-center">Mes projets Unity</h3>
+        <div class="grid md:grid-cols-2 gap-10">
+		
+          <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform
+				  hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2023/08/Capture-decran-2023-09-05-161753.png" alt="ICLAREC" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">ICLAREC - Simulateur VR</h4>
+                <p class="mt-2 text-gray-600">Simulateur de nettoyage de piscine nucléaire. <br>Rôle : Chef de projet & Développement Unity. </p>
+                <a href="https://www.audace-digital-learning.fr/realisation/orano-iclarec-ii-vr/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform 
+                    hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2023/05/natixis-jpg.webp" alt="Natixis" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">Natixis - Évacuation incendie</h4>
+                <p class="mt-2 text-gray-600"> E-Learning en réalité Augmentée pour former à la sécurité incencie. <br>Rôle : Chef de projet & Développement Unity. </p>
+                <a href="https://www.audace-digital-learning.fr/realisation/natixis-e-learning-en-r-a-pour-la-formation-a-la-securite-incendie/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+		  <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform 
+                    hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2024/07/IFPRA-ORANO-EDF-Simulateur-EnnoVR-image-9.png" alt="EnnoVR" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">IFPRA - EnnoVR</h4>
+                <p class="mt-2 text-gray-600"> Simulateur en réalité virtuelle destiné à faire découvrir concrètement les métiers du nucléaire.<br>Rôle : Chef de projet</p>
+                <a href="https://www.audace-digital-learning.fr/realisation/ifpra-simulateur-ennovr/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform 
+                    hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2023/06/carsat-serious-game-risques-routiers-jpg.webp" alt="Trajet Gagnant" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">Carsat - Trajet gagnant</h4>
+                <p class="mt-2 text-gray-600"> Serious Game ayant pour but de prévenir des risques liés au manque d'attention au volant. <br>Rôle : Développement Unity. </p>
+                <a href="https://www.audace-digital-learning.fr/realisation/carsat-serious-game-trajet-gagnant/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform 
+                    hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2023/06/navalgroup_sg-6-1024x576-1.jpg" alt="Naval Group" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">Naval Group - Cybersécurité</h4>
+                <p class="mt-2 text-gray-600"> Serious Game ayant pour but de sensibiliser aux bonnes pratiques de cybersécurité.<br>Rôle : Développement Unity. </p>
+                <a href="https://www.audace-digital-learning.fr/realisation/naval-group-serious-game-cybersecurite/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+          <div class="opacity-0 animate-fadeInCard">
+            <div class="bg-white rounded-2xl shadow transition-transform duration-500 transform 
+                    hover:scale-105 hover:-translate-y-2 hover:shadow-2xl overflow-hidden">
+              <img src="https://www.audace-digital-learning.fr/wp-content/uploads/2023/06/ORANO_Appli_Safelift-7.png" alt="Safelift" class="w-full h-60 object-cover">
+              <div class="p-6">
+                <h4 class="text-xl font-bold">Safelift</h4>
+                <p class="mt-2 text-gray-600"> dispositif innovant visant à simuler différents scénarii de manutention dans un environnement très contraint. <br>Rôle : Chef de projet & Développement Unity. </p>
+                <a href="https://www.audace-digital-learning.fr/realisation/orano-safelift/" target="_blank" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline"> En savoir plus → </a>
+              </div>
+            </div>
+          </div>
+		  
+        </div>
+      </div>
+    </section>
+    <!-- Animations -->
+    <style>
+      @keyframes fadeInCard {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInCard {
+        animation: fadeInCard 0.9s ease-out forwards;
+      }
+    </style>
+    <!-- Diplômes & Certifications -->
+    <section id="education" class="max-w-6xl mx-auto py-16 px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center">Diplômes & Certifications</h3>
+      <div class="space-y-6">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h4 class="text-xl font-semibold text-indigo-600">Certification Unity Professional Programmer</h4>
+          <p class="text-gray-600">2025</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h4 class="text-xl font-semibold text-indigo-600">Master Image Vision Interaction</h4>
+          <p class="text-gray-600">Université de Lille | 2015 - 2017</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h4 class="text-xl font-semibold text-indigo-600">Licence Informatique</h4>
+          <p class="text-gray-600">Université de Lille | 2014 - 2015</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h4 class="text-xl font-semibold text-indigo-600">D.U.T Informatique</h4>
+          <p class="text-gray-600">Université de Lille | 2012 - 2014</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="max-w-5xl mx-auto py-16 px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">Me contacter</h3>
+      <p class="text-lg">📧 <a href="mailto:dimitri.charneux@gmail.com" class="text-blue-600">dimitri.charneux@gmail.com</a>
+      </p>
+      <p class="mt-2">💼 <a href="https://www.linkedin.com/in/dimitri-charneux-901a0a155/" target="_blank" class="text-blue-600">LinkedIn</a>
+      </p>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center"> © 2025 Dimitri Charneux - Portfolio </footer>
+  </body>
+</html>
